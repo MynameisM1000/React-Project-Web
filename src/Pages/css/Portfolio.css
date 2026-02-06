@@ -1,0 +1,240 @@
+:root{
+    --index: calc(1vw + 1 vh);
+}
+.continer {
+    display: flex;
+    justify-content: center;
+}
+.frstsection{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfiliotext{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.firstline{
+    width: 1256px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+}
+.scntline{
+    margin-top: 50px;
+    width: 1350px;
+    height: 290px;
+    display: flex;
+    justify-content: space-around;
+}
+.page{
+    width: 392px;
+    height: 290px;
+    background: linear-gradient(45deg, rgba(131,0,213,1) 0%, rgba(115,0,213,1) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+    border-radius: 24px;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1);
+}
+.pageimg{
+    width: 350px;
+    height: 186px;
+    filter: brightness(120%);
+    border-radius: 12px;
+    margin-top: 21px;
+}
+.pageimg,.pagetext,.pageparagraf{
+    position: relative;
+    left: 21px;
+}
+.pagetext,.pageparagraf{
+    width: 340px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.pagetext{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 24px;
+}
+.page:hover{
+    transform: scale(1.05);
+}
+.th1 { background: linear-gradient(65deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0, 1) 100%); }
+.th2 { background: linear-gradient(45deg, rgb(243, 116, 32) 0%, rgba(242, 187, 23, 1) 100%); }
+.th3 { background: linear-gradient(45deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0, 1) 100%); }
+.th4 { background: linear-gradient(45deg, rgba(218, 165, 32, 1) 0%, rgba(255, 102, 0, 1) 100%); }
+.th5 { background: linear-gradient(45deg, rgba(255, 102, 0, 1) 0%, rgba(242, 187, 23, 1) 100%); }
+.th6 { background: linear-gradient(45deg, rgba(242, 187, 23, 1) 0%, rgba(218, 165, 32, 1) 100%); }
+.background {
+    position: absolute;
+    top: 700px;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    background-color: #101026;
+}
+@media screen and (max-width:1350px){
+    .frstsection {
+        height: 1150px;
+    }
+    .firstline{
+        width: 824px;
+        height: 1150px !important;
+    }
+    .page {
+        background: linear-gradient(45deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0, 1) 80%,rgba(242, 187, 23, 1) 100%);
+    }
+    .th2 {
+        background: linear-gradient(45deg, rgb(243, 116, 32) 0%, rgba(242, 187, 23, 1) 100%);
+    }
+    .th3 {
+        background: linear-gradient(45deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    }
+    .th4 {
+        background: linear-gradient(45deg, rgba(255, 102, 0, 1) 0%, rgba(218, 165, 32, 1) 100%);
+    }
+    .th5 {
+        background: linear-gradient(45deg, rgb(242, 163, 25) 0%, rgba(243, 116, 32, 1) 120%);
+    }
+    .th6 {
+        background: linear-gradient(45deg, rgb(242, 141, 25) 0%, rgba(243, 116, 32, 1) 80%, rgb(242, 163, 25) 100%);
+    }    
+}
+.background {
+    position: absolute;
+    top: 700px;
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+    background-color: #101026;
+}
+@media screen and (max-width:912px){
+    .portfiliotext{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .frstsection {
+        height: 900px;
+        padding: 0px 20px;
+    }
+    .firstline{
+        max-width: 660px;
+        width: auto;
+        height: 750px !important;
+        gap: 10px 20px;
+    }
+    .page{
+        width: 320px;
+        height: 240px;
+    }
+    .pageimg{
+        width: 300px;
+        height: 166px;
+        margin-top: 10px;
+    }
+    .pageimg,.pagetext,.pageparagraf{
+        left: 10px;
+    }
+    .pagetext{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .pageparagraf {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:700px){
+    .page {
+        background: linear-gradient(65deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0, 1) 100%);
+    }
+    .th2 {
+        background: linear-gradient(45deg, rgb(243, 116, 32) 0%, rgba(242, 187, 23, 1) 100%);
+    }
+    .th3 {
+        background: linear-gradient(45deg, rgba(242, 187, 23, 1) 0%, rgba(255, 102, 0,) 100%);
+    }    
+}
+@media screen and (max-width:700px){
+    .portfiliotext{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .frstsection {
+        height: 950px;
+    }
+    .firstline{
+        width: 400px;
+    }
+    .page{
+        width: 400px !important;
+        height: 290px;
+    }
+    .pageimg{
+        width: 360px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .pageimg,.pagetext,.pageparagraf{
+        left: 20px;
+    }
+    .pagetext,.pageparagraf{
+        width: 300px;
+        font-size: 14px;
+    }
+    .pagetext{
+        width: 380px;
+        font-size: 18px;
+    }
+    .th4, .th5, .th6 {
+        display: none;
+    }
+}
+@media screen and (max-width:420px){
+    .portfiliotext{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .frstsection {
+        height: 785px;
+    }
+    .firstline{
+        width: 300px;
+        gap: 5px 0px;
+    }
+    .page{
+        width: 300px !important;
+        height: 220px;
+    }
+    .pageimg{
+        width: 280px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .pageimg,.pagetext,.pageparagraf{
+        left: 10px;
+    }
+    .pagetext,.pageparagraf{
+        width: 280px;
+        font-size: 12px;
+    }
+    .pagetext{
+        width: 280px;
+        font-size: 14px;
+    }
+    .th4, .th5, .th6 {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: #10112E;
+    width: 100%;
+}
+.box {
+    height: 80px !important;
+    width: 100% !important;
+}

@@ -1,0 +1,315 @@
+.bodysector{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.discript{
+    width: 1100px;
+    height: 600px;
+}
+.discript #com{
+    margin-bottom: 80px;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+}
+#com text{
+    color: #fff;
+    font-weight: bolder;
+    line-height: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+.colo {
+    color: #F2BB17 !important;
+} 
+.informationsector{
+    display: flex;
+    justify-content: space-between;
+}
+.informationsector {
+    gap: 50px;
+}
+.informationsector h1{
+    color: #fff;
+    font-weight: bolder;
+    line-height: 80%;
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.informationsector p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #767676;
+}
+.sectors{
+    width: 220px;
+}
+@media screen and (max-width:1400px){
+    .discript{
+        width: 920px;
+    }
+}
+@media screen and (max-width:1200px){
+    .discript{
+        width: 846px;
+    }
+}
+@media screen and (max-width:1050px){
+    .discript{
+        width: 728px;
+    }
+    .informationsector {
+        gap: 40px;
+    }
+    .informationsector h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:840px){
+    .discript{
+        width: 700px;
+    }
+    .informationsector {
+        gap: 30px;
+    }
+}
+@media screen and (max-width:750px){
+    .bodysector{
+        justify-content: unset;
+        height: 600px;
+    }
+    .informationsector{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .informationsector p{
+        font-size: 16px;
+    }
+    .discript #com{
+        font-size:30px;
+        margin-bottom: 40px;
+    }
+    .informationsector h1{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .discript{
+        position: relative;
+        left: 40px;
+        width: 420px;
+        top: 0px;
+    }
+    .sectors{
+        width: unset;
+    }
+}
+
+@media screen and (max-width:500px){
+    .bodysector{
+        height: 500px;
+    }
+    .discript{
+        top: 40px;
+        width: 400px;
+    }
+    .discript #com{
+        font-size:28px;
+        margin-bottom: 35px;
+    }
+    .informationsector h1{
+        font-size: 25px;
+        height: 30px;
+    }
+    .informationsector p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:470px){
+    .discript{
+        width: 350px;
+    }
+    .discript #com{
+        font-size:20px;
+        margin-bottom: 35px;
+    }
+    .informationsector h1{
+        font-size: 22px;
+        height: 25px;
+    }
+    .informationsector p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:400px){
+    .discript{
+        width: 320px;
+        left: 20px;
+    }
+    .discript #com{
+        font-size:20px;
+        margin-bottom: 25px;
+    }
+    .informationsector h1{
+        font-size: 18px;
+        height: 20px;
+    }
+    .informationsector p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:350px){
+    .discript{
+        width: 280px;
+        left: 20px;
+    }
+    .discript #com{
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .informationsector h1{
+        font-size: 16px;
+        height: 18px;
+    }
+    .informationsector p{
+        font-size: 12px;
+    }
+}
+
+/* Обновить стиль для родительского контейнера */
+.testimonials {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    word-wrap: break-word;  /* Ensures long words wrap correctly */
+    white-space: normal;    /* Allows text to wrap normally */
+}
+
+.testimonial-item {
+    display: block;        /* Changed from inline-block to block for wrapping */
+    width: 100%;           /* Ensures each testimonial takes up full width */
+    text-align: center;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Убедитесь, что анимации сдвига не изменяют размеры */
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+/* Ключевые кадры для сдвига влево */
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Ключевые кадры для появления справа */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.MainAboutUS, .comments{
+    background-color: #101026;
+}
+#last{
+    margin-bottom: 0px;
+}
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.testimonial-item blockquote{
+    width: 200px;
+}
+.container-md{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 0px 100px;
+}
+span {
+    color:#F2BB17;
+}
+cite {
+    display: block !important;
+    word-wrap: break-word !important;
+}
+.container-md h1{
+    font-size: 45px;
+    font-weight: 550;
+    margin-bottom: 40px;
+}
+#aboutCom {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+ol {
+    margin-bottom: 0px;
+}
+ol li {
+    font-weight: 600;
+}
+li h6{
+    font-weight: 300;
+}
+.container-md h5 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+blockquote {
+    margin: 0px;
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+}
+@media screen and (max-width:992px){
+    .container-md{
+        padding: 0px !important;
+    }
+}
+@media screen and (max-width:768px){
+    .container-md{
+        padding: 40px !important;
+    }
+}
+@media screen and (max-width:545px){
+    .container-md h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:400px){
+    .container-md{
+        padding: 20px !important;
+    }
+}
+.comments {
+    padding-top: 40px;
+}
